@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the resistoflex feature.
+ */
+
+include_once 'features_resistoflex.features.inc';

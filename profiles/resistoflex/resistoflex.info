@@ -1,0 +1,7 @@
+name = Resistoflex
+description = Profile for Resistoflex
+version = 7.x-1.0
+core = 7.x
+
+files[] = resistoflex.install
+files[] = resistoflex.profile

@@ -1,0 +1,12 @@
+name = Landing Pages
+description = Landing pages feature.
+core = 7.x
+package = Resistoflex
+version = 7.x-1.0
+project = feature_landing_pages
+dependencies[] = ctools
+dependencies[] = page_manager
+features[ctools][] = page_manager:pages_default:1
+features[features_api][] = api:2
+features[page_manager_handlers][] = site_template__default_layout
+features[page_manager_pages][] = lp_home_page

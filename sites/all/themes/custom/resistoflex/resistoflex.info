@@ -1,0 +1,18 @@
+name = resistoflex
+description = Resistoflex copy of Aurora
+core = 7.x
+base theme = aurora
+
+regions[header]         = Header
+regions[main_prefix]    = Main Region Prefix
+regions[content]        = Main
+regions[main_suffix]    = Main Region Suffix
+regions[footer]         = Footer
+
+plugins[panels][layouts] = layouts
+
+; Information added by Drupal.org packaging script on 2015-02-11
+version = "7.x-3.5"
+core = "7.x"
+project = "resistoflex"
+datestamp = "1423684983"

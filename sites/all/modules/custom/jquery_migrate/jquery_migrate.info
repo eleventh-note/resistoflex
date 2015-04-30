@@ -1,0 +1,3 @@
+name = Jquery Migrate
+description = Custom module for loading jquery-migrate.js
+core = 7.x
