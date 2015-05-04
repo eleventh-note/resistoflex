@@ -8,7 +8,7 @@
 
 <div class="resistoflex main-wrapper">
   <div class="header">
-    <div class="logo"></div>
+    <div class="logo"><img src="sites/all/themes/custom/resistoflex/img/resistoflex-logo.png" alt="Resistoflex Logo" /></div>
     <div class="navbar">
       <?php print $content['header_navbar']; ?>
     </div>
