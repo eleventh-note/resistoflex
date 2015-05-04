@@ -139,7 +139,7 @@ function feature_landing_pages_default_page_manager_handlers() {
     $pane->uuid = '7b98e0d9-72b4-4125-9701-0a582ae83e1a';
     $display->content['new-7b98e0d9-72b4-4125-9701-0a582ae83e1a'] = $pane;
     $display->panels['main_content'][1] = 'new-7b98e0d9-72b4-4125-9701-0a582ae83e1a';
-  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $export['site_template__default_layout'] = $handler;
