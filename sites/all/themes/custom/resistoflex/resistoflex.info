@@ -11,6 +11,8 @@ regions[footer]         = Footer
 
 plugins[panels][layouts] = layouts
 
+stylesheets[all][] = css/styles.css
+
 ; Information added by Drupal.org packaging script on 2015-02-11
 version = "7.x-3.5"
 core = "7.x"
