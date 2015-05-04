@@ -10,6 +10,16 @@
 function features_resistoflex_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'access content'.
+  $permissions['access content'] = array(
+    'name' => 'access content',
+    'roles' => array(
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'administer block semantics'.
   $permissions['administer block semantics'] = array(
     'name' => 'administer block semantics',
