@@ -1,0 +1,40 @@
+// Featured Services Styles
+
+.featured-services {
+  @include clearfix;
+  .service-row {
+    @include float-span(4);
+
+    &:nth-child(3n) {
+      @include float-span(4, 'last');
+    }
+  }
+
+  .service-row img {
+    width: 100%;
+  }
+
+  .pane-title {
+    font: $font-view-title;
+    text-transform: uppercase;
+    padding: 8px 0px 0px 0px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+  }
+
+  a {
+    display: block;
+    font: $font-view-links;
+    color: $view-title-links;
+    text-decoration: none;
+    padding: 6px 0px 4px 0px;
+
+    &:hover {
+
+    }
+  }
+
+  p {
+    font: $font-view-text;
+  }
+}

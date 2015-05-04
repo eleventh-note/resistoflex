@@ -1,0 +1,21 @@
+// Featured Clients Styles
+
+.featured-clients {
+  @include clearfix;
+  .client-row {
+    @include float-span(4);
+
+    &:nth-child(3n) {
+      @include float-span(4, 'last');
+    }
+  }
+
+  .client-row img {
+    width: 100%;
+  }
+
+  .pane-title {
+    font: $font-view-title;
+    text-transform: uppercase;
+  }
+}

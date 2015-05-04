@@ -1,0 +1,21 @@
+// Add Fonts
+
+@font-face {
+  font-family: 'antonregular';
+  src: url('../fonts/anton_regular-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/anton_regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/anton_regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/anton_regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/anton_regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/anton_regular-webfont.svg#antonregular') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'armataregular';
+  src: url('../fonts/armata_regular-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/armata_regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/armata_regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/armata_regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/armata_regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/armata_regular-webfont.svg#antonregular') format('svg'); /* Legacy iOS */
+}
