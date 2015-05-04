@@ -1,4 +1,78 @@
 .header {
   height: 160px;
   background-image: url('../img/header-background.jpg');
+
+  .logo {
+    @include float-span(1);
+    width: 125px;
+    margin-top: 16px;
+    margin-right: 20px;
+  }
+
+  .right-side {
+    @include float-span(10, 'last');
+    float: left;
+    margin-top: 28px;
+  }
+
+  .inner {
+    @include clearfix;
+
+    @media screen and (min-width: $large) {
+      width: 90%;
+      max-width: $very-large;
+      margin: 0 auto;
+    }
+
+    @media screen and (min-width: $very-large) {
+      width: 90%;
+      max-width: $very-large;
+      margin: 0 auto;
+    }
+  }
+
+  .title {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-right: 10px;
+    padding: 3px 0px 5px 0px;
+
+    h1 {
+      margin-left: 10px;
+      font: $font-header-title;
+      text-transform: uppercase;
+      color: $color-header-title;
+    }
+
+    h2 {
+      margin-left: 10px;
+      font: $font-header-subtitle;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+
+  .navbar {
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+
+  .navbar li {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  .navbar a {
+    display: inline-block;
+    font: $font-main-navbar;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    padding: 3px 8px;
+
+    &.active, &:hover {
+      background-color: $navbar-active;
+      @include border-radius(5px);
+    }
+  }
 }

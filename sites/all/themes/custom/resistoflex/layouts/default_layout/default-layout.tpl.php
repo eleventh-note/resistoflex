@@ -8,9 +8,17 @@
 
 <div class="resistoflex main-wrapper">
   <div class="header">
-    <div class="logo"><img src="sites/all/themes/custom/resistoflex/img/resistoflex-logo.png" alt="Resistoflex Logo" /></div>
-    <div class="navbar">
-      <?php print $content['header_navbar']; ?>
+    <div class="inner">
+      <div class="logo"><img src="<?php print drupal_get_path('theme', 'resistoflex'); ?>/img/resistoflex-logo.png" alt="Resistoflex Logo" /></div>
+      <div class="right-side">
+        <div class="title">
+          <h1>Resistoflex  Construction Services, Inc.</h1>
+          <h2>Surface Management Specialist</h2>
+        </div>
+        <div class="navbar">
+          <?php print $content['header_navbar']; ?>
+        </div>
+      </div>
     </div>
   </div>
   <div class="content">
