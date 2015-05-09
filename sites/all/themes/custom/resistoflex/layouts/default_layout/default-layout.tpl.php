@@ -21,6 +21,9 @@
       </div>
     </div>
   </div>
+  <div class="mobile-navbar">
+    <?php print $content['header_navbar']; ?>
+  </div>
   <div class="content">
     <?php print $content['main_content']; ?>
   </div>
