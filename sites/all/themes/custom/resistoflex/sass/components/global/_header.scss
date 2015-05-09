@@ -1,33 +1,61 @@
 .header {
   height: 160px;
+  padding-bottom: 5px;
+
   background-image: url('../img/header-background.jpg');
 
   .logo {
     @include float-span(1);
-    width: 125px;
+    width: 85px;
     margin-top: 16px;
-    margin-right: 20px;
+    margin-right: 10px;
+
+    @media screen and (min-width: $small) {
+      width: 125px;
+    }
+
+    img {
+      width: 100%;
+    }
   }
 
   .right-side {
-    @include float-span(10, 'last');
+    margin-top: 18px;
+    @include float-span(8, 'last');
     float: left;
-    margin-top: 28px;
+
+    @media screen and (min-width: $small) {
+      @include float-span(8, 'last');
+      float: left;
+    }
+
+    @media screen and (min-width: $medium) {
+      margin-top: 28px;
+      @include float-span(9, 'last');
+      float: left;
+    }
+
+    @media screen and (min-width: $large) {
+      @include float-span(10, 'last');
+      float: left;
+    }
   }
 
   .inner {
     @include clearfix;
+    width: 90%;
+    margin: 0 auto;
 
-    @media screen and (min-width: $large) {
-      width: 90%;
-      max-width: $very-large;
-      margin: 0 auto;
+    @media screen and (min-width: $medium) {
+      max-width: $large;
     }
 
-    @media screen and (min-width: $very-large) {
-      width: 90%;
+    @media screen and (min-width: $large) {
       max-width: $very-large;
-      margin: 0 auto;
+    }
+
+    @media screen and (min-width: $very-large) {width: 90%;
+      max-width: $very-large;
     }
   }
 
@@ -42,6 +70,13 @@
       font: $font-header-title;
       text-transform: uppercase;
       color: $color-header-title;
+      line-height: 1.2em;
+      font-size: 22px;
+
+      @media screen and (min-width: $small) {
+        line-height: 1.5em;
+        font: $font-header-title;
+      }  
     }
 
     h2 {
@@ -49,6 +84,11 @@
       font: $font-header-subtitle;
       text-transform: uppercase;
       color: white;
+      font-size: 14px;
+
+      @media screen and (min-width: $small) {
+        font: $font-header-subtitle;
+      }
     }
   }
 
@@ -59,7 +99,7 @@
 
   .navbar li {
     display: inline-block;
-    margin-right: 5px;
+    margin: 0 5px 5px 0;
   }
 
   .navbar a {
