@@ -1,6 +1,6 @@
 // Featured Clients Styles
 
-.featured-clients {
+.featured-clients, all-clients {
   @include clearfix;
   @include general-view-container();
 
