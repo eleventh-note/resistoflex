@@ -9,7 +9,7 @@
 <div class="resistoflex main-wrapper">
   <div class="header">
     <div class="inner">
-      <div class="logo"><img src="<?php print drupal_get_path('theme', 'resistoflex'); ?>/img/resistoflex-logo.png" alt="Resistoflex Logo" /></div>
+      <div class="logo"><img src="<?php print base_path() . drupal_get_path('theme', 'resistoflex'); ?>/img/resistoflex-logo.png" alt="Resistoflex Logo" /></div>
       <div class="right-side">
         <div class="title">
           <h1>Resistoflex  Construction Services, Inc.</h1>
