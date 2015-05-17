@@ -2,24 +2,23 @@
 
 .featured-services {
   @include clearfix;
-  .service-row {
-    @include float-span(4);
+  @include general-view-container();
 
-    &:nth-child(3n) {
-      @include float-span(4, 'last');
-    }
+  .service-row {
+    @include general-view-row();
+  }
+
+  // contains all the service-rows
+  .pane-content {
+    @include general-view-pane-content(); 
   }
 
   .service-row img {
-    width: 100%;
+    @include general-view-images();
   }
 
   .pane-title {
-    font: $font-view-title;
-    text-transform: uppercase;
-    padding: 8px 0px 0px 0px;
-    border-bottom: 1px solid #000;
-    margin-bottom: 10px;
+    @include general-view-title-pane();
   }
 
   a {
@@ -29,9 +28,8 @@
     text-decoration: none;
     padding: 6px 0px 4px 0px;
 
-    &:hover {
-
-    }
+    @include general-view-link-images();
+    
   }
 
   p {

@@ -2,20 +2,23 @@
 
 .featured-clients {
   @include clearfix;
-  .client-row {
-    @include float-span(4);
+  @include general-view-container();
 
-    &:nth-child(3n) {
-      @include float-span(4, 'last');
-    }
+  .client-row {
+    @include general-view-row();
+  }
+
+  // contains all the service-rows
+  .pane-content {
+    @include general-view-pane-content(); 
   }
 
   .client-row img {
-    width: 100%;
+    @include general-view-images();
+    max-height: 230px;
   }
 
   .pane-title {
-    font: $font-view-title;
-    text-transform: uppercase;
+    @include general-view-title-pane();
   }
 }
