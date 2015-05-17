@@ -12,6 +12,9 @@ regions[footer]         = Footer
 plugins[panels][layouts] = layouts
 
 stylesheets[all][] = css/styles.css
+stylesheets[all][] = css/animate.css
+scripts[] = js/wow.min.js
+scripts[] = js/resistoflex.js
 
 ; Information added by Drupal.org packaging script on 2015-02-11
 version = "7.x-3.5"
