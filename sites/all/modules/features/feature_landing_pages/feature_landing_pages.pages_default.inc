@@ -313,6 +313,98 @@ function feature_landing_pages_default_page_manager_pages() {
   $page->default_handlers[$handler->name] = $handler;
   $pages['lp_home_page'] = $page;
 
+  $page = new stdClass();
+  $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
+  $page->api_version = 1;
+  $page->name = 'lp_projects';
+  $page->task = 'page';
+  $page->admin_title = 'Projects';
+  $page->admin_description = '';
+  $page->path = 'projects';
+  $page->access = array();
+  $page->menu = array();
+  $page->arguments = array();
+  $page->conf = array(
+    'admin_paths' => FALSE,
+  );
+  $page->default_handlers = array();
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_lp_projects__panel_context_361442c2-1e62-4745-89b0-f1587b603a0f';
+  $handler->task = 'page';
+  $handler->subtask = 'lp_projects';
+  $handler->handler = 'panel_context';
+  $handler->weight = 0;
+  $handler->conf = array(
+    'title' => 'Projects',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => '',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+  );
+  $display = new panels_display();
+  $display->layout = 'project_landing_layout';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'header_navbar' => NULL,
+      'main_content' => NULL,
+      'footer_navbar' => NULL,
+      'all_projects' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = 'Projects';
+  $display->uuid = '8dcdaaff-a677-4835-bd9c-a63c87f2d20c';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-ae2b6f44-1991-43f6-8859-1f751c54d450';
+    $pane->panel = 'all_projects';
+    $pane->type = 'views';
+    $pane->subtype = 'view_projects';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_pager_settings' => 0,
+      'use_pager' => 0,
+      'nodes_per_page' => '0',
+      'pager_id' => '0',
+      'offset' => '0',
+      'more_link' => 0,
+      'feed_icons' => 0,
+      'panel_args' => 0,
+      'link_to_view' => 0,
+      'args' => '',
+      'url' => '',
+      'display' => 'block',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'ae2b6f44-1991-43f6-8859-1f751c54d450';
+    $display->content['new-ae2b6f44-1991-43f6-8859-1f751c54d450'] = $pane;
+    $display->panels['all_projects'][0] = 'new-ae2b6f44-1991-43f6-8859-1f751c54d450';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = 'new-ae2b6f44-1991-43f6-8859-1f751c54d450';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $pages['lp_projects'] = $page;
+
   return $pages;
 
 }
