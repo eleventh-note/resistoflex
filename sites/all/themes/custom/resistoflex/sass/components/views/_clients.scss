@@ -13,9 +13,24 @@
     @include general-view-pane-content(); 
   }
 
+  .client-row a {
+    display: block;
+    text-align: center;
+
+    @media screen and (min-width: $large) {
+      line-height: 170px;
+      max-height: 170px;
+    }
+  }
   .client-row img {
     @include general-view-images();
-    max-height: 230px;
+
+    @media screen and (min-width: $large) {
+      vertical-align: middle;
+      width: inherit;
+      max-height: 170px;
+      max-width: 100%;
+    }
   }
 
   .pane-title {
