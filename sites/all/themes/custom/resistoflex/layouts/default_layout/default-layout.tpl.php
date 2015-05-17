@@ -28,11 +28,13 @@
     <?php print $content['main_content']; ?>
   </div>
   <div class="footer">
-    <div class="navbar">
-      <?php print $content['footer_navbar']; ?>
-    </div>
-    <div class="copyright">
-      Copyright Resistoflex &copy; <?php print date('Y', time()); ?> | All rights reserved.
+    <div class="inner">
+      <div class="navbar">
+        <?php print $content['footer_navbar']; ?>
+      </div>
+      <div class="copyright">
+        Copyright Resistoflex &copy; <?php print date('Y', time()); ?> | All rights reserved.
+      </div>
     </div>
   </div>
 </div>

@@ -1,6 +1,6 @@
 // Featured Services Styles
 
-.featured-services {
+.featured-services, .all-services {
   @include clearfix;
   @include general-view-container();
 

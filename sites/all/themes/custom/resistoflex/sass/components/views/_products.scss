@@ -1,6 +1,6 @@
 // Featured Products Styles
 
-.featured-products {
+.featured-products, .all-products {
   @include clearfix;
   @include general-view-container();
   
