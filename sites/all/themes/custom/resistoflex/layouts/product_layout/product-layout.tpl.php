@@ -17,7 +17,7 @@
 
   <?php if (!empty($content['attachment']) && $content['attachment'] != '&nbsp;'): ?>
     <div class="product-attachment">
-      <h2>Downloadable Files</h2>
+      <h2>Related Documents</h2>
       <?php print $content['attachment']; ?>
     </div>
   <?php endif; ?>

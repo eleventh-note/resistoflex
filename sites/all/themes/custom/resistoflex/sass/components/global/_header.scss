@@ -8,9 +8,10 @@
     @include float-span(1);
     width: 85px;
     margin-top: 16px;
-    margin-right: 10px;
+    margin-right: 5px;
 
     @media screen and (min-width: $small) {
+      margin-right: 10px;
       width: 125px;
     }
 
