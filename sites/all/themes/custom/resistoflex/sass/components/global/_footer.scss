@@ -2,6 +2,10 @@
   background-color: $footer-bg-color;
   padding: 5px 0 15px 0;
 
+  .inner {
+    @include general-view-container();
+  }
+
   .navbar {
   	text-align: center;
   	padding: 15px 15px 0 15px;
@@ -47,6 +51,7 @@
   	  text-align: right;
   	  width: inherit;
   	  padding-right: 15px;
+      margin-right: 0;
   	}
   }
 }
@@ -58,13 +63,21 @@ html {
 }
 
 body {
-  margin: 0 0 100px;
+  margin: 0 0 150px;
+
+  @media screen and (min-width: $medium) {
+    margin: 0 0 120px;
+  }
 }
 
 .footer {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 100px;
+  height: 150px;
   width: 100%;
+
+  @media screen and (min-width: $small) {
+    height: 120px;
+  }
 }
