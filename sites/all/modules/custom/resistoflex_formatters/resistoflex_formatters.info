@@ -1,0 +1,5 @@
+name = Resistoflex added formatters
+description = "Add resistoflex specific formatters"
+package = Resistoflex
+core = 7.x
+files[] = resistoflex_formatters.module

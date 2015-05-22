@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * Implements hook_field_formatter_info().
+ */
+function resistoflex_formatters_field_formatter_info() {
+  return array(
+    'bqsliderpro_formatter' => array( //Machine name of the formatter
+      'label' => t('BQ Slider'),
+      'field types' => array('image'),
+      'settings'  => array(),
+    ),
+  );
+}
+
+/**
+ * Implements hook_field_formatter_settings_summary().
+ */
+function resistoflex_formatters_field_formatter_settings_summary($field, $instance, $view_mode) {
+  $summary = t('Format images for bqslider'); // we use t() for translation and placeholders to guard against attacks
+  return $summary;
+}
+
+/**
+ * Implements hook_field_formatter_view().
+ */
+function resistoflex_formatters_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
+  $element = array(); // Initialize the var
+  $markup = "";
+
+  foreach ($items as $delta => $item) {
+    $image  = '<div class="sp-slide">';
+      $image .= '<div class="sp-image-container">';
+        $image .= '<img class="sp-image" src="' . base_path() . 'sites/default/files/' . $item['filename'] . '"alt="' . t($item['alt']) . '" title="' . t($item['title']) . '" />';
+      $image .= '</div>';
+
+      $title = trim($item['title']);
+      if($title) {
+        $image .= '<p class="sp-layer sp-white sp-padding" data-width="300" data-horizontal="10" data-vertical="10">' . $title . '</p>';
+      }
+    $image .= '</div>';
+
+    // Assign image to markup
+    $markup .= $image;
+  }
+
+  $element[0]['#markup'] = 
+    '<div class="slider-pro" id="my-slider"><div class="sp-slides">' . $markup  . '</div></div>';
+  return $element;
+}

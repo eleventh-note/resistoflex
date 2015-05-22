@@ -1,24 +1,24 @@
-.service {
+.project {
   
   @include general-view-container();
 
   h2 {
-  	font: $font-detail-page-title;
+    font: $font-detail-page-title;
     text-transform: uppercase;
-  	margin: 15px 0 10px 0;
+    margin: 15px 0 10px 0;
   }
 
-  .service-photos p {
+  .project-photos p {
     font: $font-detail-page-text;
   }
 
-  .service-description p {
+  .project-description {
   	font: $font-detail-page-text;
   	line-height: 18px;
   	margin-bottom: 12px;
   }
 
-  .service-attachment .file {
+  .project-attachment .file {
   	margin-right: 15px;
 
   	a {

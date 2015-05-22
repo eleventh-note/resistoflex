@@ -13,7 +13,10 @@ plugins[panels][layouts] = layouts
 
 stylesheets[all][] = css/styles.css
 stylesheets[all][] = css/animate.css
+stylesheets[all][] = css/slider-pro.min.css
+
 scripts[] = js/wow.min.js
+scripts[] = js/jquery.sliderPro.min.js
 scripts[] = js/resistoflex.js
 
 ; Information added by Drupal.org packaging script on 2015-02-11
