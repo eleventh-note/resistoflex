@@ -33,7 +33,7 @@
 	  	color: $navbar-active;
 	  	text-decoration: none;
 
-	  	&:hover, &.active {
+	  	&:hover, &.active, &.active-trail {
 	    text-decoration: underline;
 	  }
 	}

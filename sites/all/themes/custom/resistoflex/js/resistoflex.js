@@ -11,6 +11,7 @@ jQuery( document ).ready(function( $ ) {
 			mediumSize: 1000,
 			largeSize: 3000,
 			thumbnailArrows: true,
+			thumbnailsPosition: 'bottom',
 			autoplay: true
   });
 });

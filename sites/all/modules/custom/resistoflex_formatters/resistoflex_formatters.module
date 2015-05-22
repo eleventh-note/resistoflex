@@ -27,24 +27,34 @@ function resistoflex_formatters_field_formatter_settings_summary($field, $instan
 function resistoflex_formatters_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
   $element = array(); // Initialize the var
   $markup = "";
+  $thumbnails = "";
 
   foreach ($items as $delta => $item) {
     $image  = '<div class="sp-slide">';
-      $image .= '<div class="sp-image-container">';
-        $image .= '<img class="sp-image" src="' . base_path() . 'sites/default/files/' . $item['filename'] . '"alt="' . t($item['alt']) . '" title="' . t($item['title']) . '" />';
-      $image .= '</div>';
+      $image .= '<img class="sp-image" src="' . base_path() . 'sites/default/files/' . $item['filename'] . '" alt="' . t($item['alt']) . '" title="' . t($item['title']) . '" />';
 
       $title = trim($item['title']);
       if($title) {
-        $image .= '<p class="sp-layer sp-white sp-padding" data-width="300" data-horizontal="10" data-vertical="10">' . $title . '</p>';
-      }
+        $image .= '<p class="sp-layer sp-black sp-padding" data-show-delay="500" data-show-transition="left" data-width="35%" data-horizontal="20" data-vertical="20">' . $title . '</p>';
+      }      
     $image .= '</div>';
 
     // Assign image to markup
     $markup .= $image;
+
+    $thumbnail =  '<div class="sp-thumbnail">';
+      $thumbnail .= '<img class="sp-thumbnail-image" src="' . base_path() . 'sites/default/files/' . $item['filename'] . '" />';
+    $thumbnail .= '</div>';
+
+    $thumbnails .= $thumbnail;
   }
 
-  $element[0]['#markup'] = 
-    '<div class="slider-pro" id="my-slider"><div class="sp-slides">' . $markup  . '</div></div>';
+  $slides = '<div class="sp-slides">' . $markup  . '</div>';
+  $thumbnails = '<div class="sp-thumbnails" data-width="100%">' . $thumbnails . '</div>';
+
+  $element[0]['#markup']  = '<div class="slider-pro" id="my-slider">';
+    $element[0]['#markup'] .= $slides;
+    $element[0]['#markup'] .= $thumbnails;
+  $element[0]['#markup'] .= '</div>';
   return $element;
 }

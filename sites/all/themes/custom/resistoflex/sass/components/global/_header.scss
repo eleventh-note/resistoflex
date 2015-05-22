@@ -155,7 +155,7 @@
       font-size: 20px;
     }
 
-    &.active {
+    &.active, &.active-trail {
       color: $navbar-active;
     }
 
