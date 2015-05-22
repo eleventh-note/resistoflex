@@ -5,7 +5,7 @@
 @import "compass/reset";
 
 
-// Fonts
+// fonts
 @import "general/grid";
 @import "general/breakpoints";
 @import "general/typography";
@@ -13,13 +13,16 @@
 @import "general/colors";
 @import "general/mixins";
 
-// Components/Global
+// components/global
 @import "components/global/header";
 @import "components/global/footer";
 @import "components/global/content";
 
-// Components/Views
+// components/views
 @import "components/views/services";
 @import "components/views/products";
 @import "components/views/clients";
 @import "components/views/projects";
+
+// components/detail_pages
+@import "components/detail_pages/service-detail";

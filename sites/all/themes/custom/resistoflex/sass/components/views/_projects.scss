@@ -1,0 +1,38 @@
+// Featured Projects Styles
+
+.all-projects {
+  @include clearfix;
+  @include general-view-container();
+
+  .project-row {
+    @include general-view-row();
+  }
+
+  // contains all the project-rows
+  .pane-content {
+    @include general-view-pane-content(); 
+  }
+
+  .project-row img {
+    @include general-view-images();
+  }
+
+  .pane-title {
+    @include general-view-title-pane();
+  }
+
+  a {
+    display: block;
+    font: $font-view-links;
+    color: $view-title-links;
+    text-decoration: none;
+    padding: 6px 0px 4px 0px;
+
+    @include general-view-link-images();
+    
+  }
+
+  p {
+    font: $font-view-text;
+  }
+}
