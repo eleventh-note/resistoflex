@@ -119,7 +119,7 @@
     text-decoration: none;
     padding: 3px 8px;
 
-    &.active, &:hover {
+    &.active, &:hover, &.active-trail {
       background-color: $navbar-active;
       @include border-radius(5px);
     }

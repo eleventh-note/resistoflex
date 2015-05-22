@@ -588,19 +588,11 @@ function feature_content_types_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'colorbox',
+        'module' => 'resistoflex_formatters',
         'settings' => array(
-          'colorbox_caption' => 'auto',
-          'colorbox_caption_custom' => '',
-          'colorbox_gallery' => 'post',
-          'colorbox_gallery_custom' => '',
-          'colorbox_image_style' => '',
-          'colorbox_multivalue_index' => NULL,
-          'colorbox_node_style' => 'large',
-          'colorbox_node_style_first' => '',
           'semantic_field_format' => '',
         ),
-        'type' => 'colorbox',
+        'type' => 'bqsliderpro_formatter',
         'weight' => 2,
       ),
       'teaser' => array(
@@ -871,7 +863,7 @@ function feature_content_types_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
           'links' => 1,
@@ -1118,7 +1110,7 @@ function feature_content_types_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
           'semantic_field_format' => '',
@@ -1178,19 +1170,11 @@ function feature_content_types_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'colorbox',
+        'module' => 'resistoflex_formatters',
         'settings' => array(
-          'colorbox_caption' => 'auto',
-          'colorbox_caption_custom' => '',
-          'colorbox_gallery' => 'post',
-          'colorbox_gallery_custom' => '',
-          'colorbox_image_style' => '',
-          'colorbox_multivalue_index' => NULL,
-          'colorbox_node_style' => 'large',
-          'colorbox_node_style_first' => '',
           'semantic_field_format' => '',
         ),
-        'type' => 'colorbox',
+        'type' => 'bqsliderpro_formatter',
         'weight' => 2,
       ),
       'teaser' => array(
@@ -1978,13 +1962,11 @@ function feature_content_types_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'resistoflex_formatters',
         'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-          'semantic_field_format' => 0,
+          'semantic_field_format' => '',
         ),
-        'type' => 'image',
+        'type' => 'bqsliderpro_formatter',
         'weight' => 3,
       ),
       'teaser' => array(

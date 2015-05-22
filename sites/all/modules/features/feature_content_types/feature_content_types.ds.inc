@@ -113,11 +113,6 @@ function feature_content_types_ds_field_settings_info() {
       'label' => 'hidden',
       'format' => 'default',
     ),
-    'field_service_photos' => array(
-      'formatter_settings' => array(
-        'ft' => array(),
-      ),
-    ),
   );
   $export['node|ct_service|default'] = $ds_fieldsetting;
 
