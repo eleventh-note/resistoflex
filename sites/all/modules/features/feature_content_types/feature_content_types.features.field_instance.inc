@@ -1978,19 +1978,13 @@ function feature_content_types_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'colorbox',
+        'module' => 'image',
         'settings' => array(
-          'colorbox_caption' => 'auto',
-          'colorbox_caption_custom' => '',
-          'colorbox_gallery' => 'post',
-          'colorbox_gallery_custom' => '',
-          'colorbox_image_style' => '',
-          'colorbox_multivalue_index' => NULL,
-          'colorbox_node_style' => 'large',
-          'colorbox_node_style_first' => '',
-          'semantic_field_format' => '',
+          'image_link' => '',
+          'image_style' => '',
+          'semantic_field_format' => 0,
         ),
-        'type' => 'colorbox',
+        'type' => 'image',
         'weight' => 3,
       ),
       'teaser' => array(

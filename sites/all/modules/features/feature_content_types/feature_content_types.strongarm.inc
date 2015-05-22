@@ -392,6 +392,9 @@ function feature_content_types_strongarm() {
       'view_mode_project' => array(
         'custom_settings' => TRUE,
       ),
+      'view_mode_slide' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
