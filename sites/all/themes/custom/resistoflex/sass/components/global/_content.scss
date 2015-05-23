@@ -17,3 +17,9 @@ body {
 .sp-thumbnail-image {
 	width: 120%;
 }
+
+.page-user .content {
+	@include general-view-container();
+	font: $font-detail-page-text;
+	padding-top: 25px;
+}

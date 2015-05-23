@@ -6,7 +6,7 @@ jQuery( document ).ready(function( $ ) {
 			arrows: true,
 			buttons: true,
 			fullScreen: true,
-			shuffle: true,
+			shuffle: false,
 			smallSize: 500,
 			mediumSize: 1000,
 			largeSize: 3000,
