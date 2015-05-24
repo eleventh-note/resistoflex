@@ -25,12 +25,13 @@
  */
 ?>
 
-<class="featured-project-slide-detail">
-  <div class="slide-image">
-    <?php print $fields['field_slide_image']->content; ?>
-  </div>
-  <div class="slide-detail">
-    <?php print $fields['title']->content; ?>
-    <?php print $fields['field_slide_description']->content; ?>
-  </div>
+<div class="slide-image">
+  <?php print $fields['field_slide_image']->content; ?>
 </div>
+<div class="sp-layer sp-black sp-padding" 
+  	data-show-delay="500" data-show-transition="left" data-width="90%" 
+  	data-horizontal="5%" data-vertical="5%">
+  <?php print $fields['title']->content; ?>
+  <?php print $fields['field_slide_description']->content; ?>
+</div>
+

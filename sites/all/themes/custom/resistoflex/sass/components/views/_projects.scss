@@ -1,5 +1,34 @@
 // Featured Projects Styles
 
+.featured-projects {
+  @include clearfix;
+  @include general-view-container();
+
+  .pane-title {
+    display: none;
+  }
+
+  .sp-layer {
+    h2 {
+      font: $font-view-title;
+      margin-bottom: 4px;
+
+      a {
+        text-decoration: none;
+        color: #e7b112;
+
+        &:hover, &.active {
+          color: #e7b112;
+        }
+      }
+    }
+
+    p {
+      font: $font-view-text;
+    }
+  }
+}
+
 .all-projects {
   @include clearfix;
   @include general-view-container();

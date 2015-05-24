@@ -16,6 +16,7 @@ function features_resistoflex_user_default_permissions() {
     'roles' => array(
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
+      'content editor' => 'content editor',
     ),
     'module' => 'node',
   );
