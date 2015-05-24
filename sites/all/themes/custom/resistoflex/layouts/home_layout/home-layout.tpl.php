@@ -1,14 +1,22 @@
 <div class="home-layout">
   <div class="featured-projects">
-    <?php print $content['featured_projects']; ?>
+    <div class="inner">
+      <?php print $content['featured_projects']; ?>
+    </div>
   </div>
   <div class="featured-services">
-    <?php print $content['featured_services']; ?>
+    <div class="inner">
+      <?php print $content['featured_services']; ?>
+    </div>
   </div>
   <div class="featured-products">
-    <?php print $content['featured_products']; ?>
+    <div class="inner">
+      <?php print $content['featured_products']; ?>
+    </div>
   </div>
   <div class="featured-clients">
-    <?php print $content['featured_clients']; ?>
+    <div class="inner">
+      <?php print $content['featured_clients']; ?>
+    </div>  
   </div>
 </div>

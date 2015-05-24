@@ -1,9 +1,14 @@
 // Featured Products Styles
 
 .featured-products, .all-products {
-  @include clearfix;
-  @include general-view-container();
-  
+  background-color: #fff;
+  padding: 0 0 30px 0;
+
+  .inner {
+    @include clearfix;
+    @include general-view-container();
+  }
+
   .product-row {
     @include general-view-row();
   }

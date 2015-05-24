@@ -1,8 +1,15 @@
 // Featured Projects Styles
 
 .featured-projects {
-  @include clearfix;
-  @include general-view-container();
+
+  background-color: #fff;
+  padding: 0 0 16px 0;
+
+  .inner {
+    @include clearfix;
+    @include general-view-container();
+    width: 100%;
+  }
 
   .pane-title {
     display: none;

@@ -1,7 +1,7 @@
 jQuery( document ).ready(function( $ ) {	
   $( '#my-slider' ).sliderPro({
   		width: "100%",
-			height: 500,
+			height: 600,
 			fade: true,
 			arrows: true,
 			buttons: true,

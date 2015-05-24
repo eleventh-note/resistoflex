@@ -1,8 +1,12 @@
 // Featured Services Styles
 
 .featured-services, .all-services {
-  @include clearfix;
-  @include general-view-container();
+  padding: 0 0 30px 0;
+
+  .inner {
+    @include clearfix;
+    @include general-view-container();
+  }
 
   .service-row {
     @include general-view-row();

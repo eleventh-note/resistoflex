@@ -1,9 +1,12 @@
 // Featured Clients Styles
 
 .featured-clients, .all-clients {
-  @include clearfix;
-  @include general-view-container();
 
+  .inner {
+    @include clearfix;
+    @include general-view-container();
+  }
+  
   .client-row {
     @include general-view-row();
   }
